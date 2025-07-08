@@ -26,6 +26,30 @@ This app is built with Express.js and uses SQLite for storing tasks.
 
 ### 📥 Clone the Repository
 
-```bash
+```
 git clone https://github.com/yourusername/mytodoapp.git
 cd mytodoapp
+---
+🐳 Build & Run with Docker
+
+docker build -t mytodoapp .
+docker run -p 3000:3000 mytodoapp
+
+Visit http://localhost:3000 in your browser.
+
+🧪 Run Locally (Without Docker)
+
+npm install
+npm start
+
+📁 Project Structure
+
+.
+├── src/
+│   └── index.js          # Main Express server
+├── package.json          # Project metadata and dependencies
+├── Dockerfile            # Docker container instructions
+├── .dockerignore         # Files to ignore during Docker build
+└── README.md             # Project documentation
+
+
